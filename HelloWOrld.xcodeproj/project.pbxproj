@@ -448,6 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloWOrld/Preview Content\"";
 				DEVELOPMENT_TEAM = 92ZT9FVY43;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HelloWOrld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloWOrld/Preview Content\"";
 				DEVELOPMENT_TEAM = 92ZT9FVY43;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HelloWOrld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
