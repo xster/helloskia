@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A10DA332492FFBB00C07E22 /* libskia.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A10DA2D2492FF7500C07E22 /* libskia.dylib */; };
+		0A10DA342492FFBB00C07E22 /* libskia.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 0A10DA2D2492FF7500C07E22 /* libskia.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DA0B071F24901311005955DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B071E24901311005955DC /* AppDelegate.swift */; };
 		DA0B072124901311005955DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B072024901311005955DC /* SceneDelegate.swift */; };
 		DA0B072324901311005955DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B072224901311005955DC /* ContentView.swift */; };
@@ -14,9 +16,6 @@
 		DA0B072824901313005955DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0B072724901313005955DC /* Preview Assets.xcassets */; };
 		DA0B073624901313005955DC /* HelloWOrldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B073524901313005955DC /* HelloWOrldTests.swift */; };
 		DA0B074124901313005955DC /* HelloWOrldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B074024901313005955DC /* HelloWOrldUITests.swift */; };
-		DA64BA802491362E00712131 /* Frameworks in Resources */ = {isa = PBXBuildFile; fileRef = DA64BA7F2491362E00712131 /* Frameworks */; };
-		DAB8D85D249175E700456F1B /* libskia.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB8D8592491541500456F1B /* libskia.dylib */; };
-		DAB8D85E249175E700456F1B /* libskia.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = DAB8D8592491541500456F1B /* libskia.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DAB8D85F249175E700456F1B /* Embed Libraries */ = {
+		0A10DA352492FFBC00C07E22 /* Embed Libraries */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DAB8D85E249175E700456F1B /* libskia.dylib in Embed Libraries */,
+				0A10DA342492FFBB00C07E22 /* libskia.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A10DA2D2492FF7500C07E22 /* libskia.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libskia.dylib; path = HelloWOrld/Frameworks/libskia.dylib; sourceTree = "<group>"; };
 		DA0B071B24901311005955DC /* HelloWOrld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWOrld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0B071E24901311005955DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA0B072024901311005955DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,9 +64,6 @@
 		DA0B073C24901313005955DC /* HelloWOrldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWOrldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0B074024901313005955DC /* HelloWOrldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWOrldUITests.swift; sourceTree = "<group>"; };
 		DA0B074224901313005955DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA64BA7F2491362E00712131 /* Frameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Frameworks; sourceTree = "<group>"; };
-		DA64BA812491365700712131 /* libskia.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libskia.dylib; path = Frameworks/libskia.dylib; sourceTree = "<group>"; };
-		DAB8D8592491541500456F1B /* libskia.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libskia.dylib; path = HelloWOrld/Frameworks/libskia.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB8D85D249175E700456F1B /* libskia.dylib in Frameworks */,
+				0A10DA332492FFBB00C07E22 /* libskia.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,16 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A10DA262492FAE000C07E22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A10DA2D2492FF7500C07E22 /* libskia.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA0B071224901311005955DC = {
 			isa = PBXGroup;
 			children = (
-				DA64BA812491365700712131 /* libskia.dylib */,
-				DAB8D8592491541500456F1B /* libskia.dylib */,
 				DA0B071D24901311005955DC /* HelloWOrld */,
 				DA0B073424901313005955DC /* HelloWOrldTests */,
 				DA0B073F24901313005955DC /* HelloWOrldUITests */,
 				DA0B071C24901311005955DC /* Products */,
-				DA64BA7F2491362E00712131 /* Frameworks */,
+				0A10DA262492FAE000C07E22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,7 +170,7 @@
 				DA0B071724901311005955DC /* Sources */,
 				DA0B071824901311005955DC /* Frameworks */,
 				DA0B071924901311005955DC /* Resources */,
-				DAB8D85F249175E700456F1B /* Embed Libraries */,
+				0A10DA352492FFBC00C07E22 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -264,7 +267,6 @@
 			files = (
 				DA0B072824901313005955DC /* Preview Assets.xcassets in Resources */,
 				DA0B072524901313005955DC /* Assets.xcassets in Resources */,
-				DA64BA802491362E00712131 /* Frameworks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
